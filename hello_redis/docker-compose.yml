@@ -1,0 +1,29 @@
+version: '3.11'
+
+services:
+  
+  web:
+    build: . 
+    expose:
+      - "5001"
+    depends_on:
+      - my-redis
+  nginx:
+   image: nginx:latest
+   ports:
+    - "5001:5001"
+   volumes:
+    - ./nginx.conf:/etc/nginx/nginx.conf
+   depends_on:
+    - web
+  my-redis:
+    image: redis:latest
+    command: redis-server --appendonly yes --save 900 1 --save 300 10 --save 60 10000
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: always
+volumes: 
+  redis-data:
+
