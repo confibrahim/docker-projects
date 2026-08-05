@@ -36,6 +36,36 @@ A Flask application connected to a Redis database.
 - Published to Docker Hub
 - Published to Amazon Elastic Container Registry (ECR)
 
+## 🔍 Troubleshooting & Problem Solving
+
+During this project, I encountered and resolved several real-world issues while building and deploying containerized applications.
+
+| Challenge | Resolution |
+|-----------|------------|
+| **Container exited immediately after starting** | Used `docker ps -a` and `docker logs` to identify application startup errors, corrected the code, rebuilt the image, and verified the container started successfully. |
+| **Flask couldn't communicate with Redis** | Configured both containers on the same Docker network and connected to Redis using the Compose service name (`my-redis`) instead of `localhost`. |
+| **Redis data was lost when the container restarted** | Implemented a named Docker volume and enabled Redis AOF persistence to ensure data survived container recreation. |
+| **Docker Compose configuration issues** | Fixed YAML indentation, corrected service dependencies, and modernized the Compose file by removing deprecated configuration. |
+| **Docker Hub authentication issues** | Investigated Docker credential helper errors, understood how `pass` stores credentials securely on Linux, and configured authentication successfully. |
+| **Amazon ECR authentication failed** | Configured the AWS CLI credentials, authenticated with Amazon ECR, tagged Docker images correctly, and pushed them to a private AWS registry. |
+| **Nginx configuration mount failed** | Diagnosed a bind mount mismatch between a host file and container path, corrected the volume mapping, and successfully configured Nginx as a reverse proxy. |
+
+---
+
+## 🚀 Docker Skills Demonstrated
+
+- Building custom Docker images with Dockerfiles
+- Running and managing containers
+- Creating multi-container applications with Docker Compose
+- Docker networking and inter-container communication
+- Persistent storage using Docker volumes
+- Configuring Redis persistence
+- Reverse proxy configuration with Nginx
+- Debugging containers using `docker logs`, `docker ps`, and container inspection
+- Publishing images to Docker Hub
+- Publishing images to Amazon Elastic Container Registry (ECR)
+- Authenticating Docker with registry credential helpers
+
 ## 🧰 Technologies Used
 
 - Docker
