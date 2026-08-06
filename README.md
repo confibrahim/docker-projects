@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Docker Learning
+=======
+# Docker Learning 
+>>>>>>> 3ff2883 (update readme)
 
 A collection of Docker projects and exercises completed while learning containerization, Docker Compose, networking, persistent storage, and container registries.
 
@@ -130,8 +134,3 @@ docker push <account-id>.dkr.ecr.eu-west-1.amazonaws.com/hello-redis:latest
 - Git version control
 
 ## 🎯 Next Steps
-
-- Deploy the containers to AWS ECS
-- Learn Kubernetes
-- Add CI/CD with GitHub Actions
-- Monitor containers using Prometheus and Grafana
