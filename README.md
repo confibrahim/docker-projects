@@ -4,11 +4,11 @@
 # Docker Learning 
 >>>>>>> 3ff2883 (update readme)
 
-A collection of Docker projects and exercises completed while learning containerization, Docker Compose, networking, persistent storage, and container registries.
+A collection of Docker projects and exercises completed while containerization, Docker Compose, networking, persistent storage, and container registries.
 
 ## 📚 About
 
-This repository documents my journey learning Docker by building practical projects and exploring the Docker ecosystem, from writing Dockerfiles to publishing images in cloud registries.
+This repository documents my journey building practical projects and exploring the Docker ecosystem, from writing Dockerfiles to publishing images in cloud registries.
 
 ## 🚀 Projects
 
@@ -84,7 +84,7 @@ During this project, I encountered and resolved several real-world issues while 
 
 ## ☁️ Container Registries
 
-As part of this project, I learned how to publish Docker images to different registries.
+As part of this project, I published Docker images to different registries.
 
 ### Docker Hub
 
