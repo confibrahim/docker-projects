@@ -1,7 +1,7 @@
 <<<<<<< HEAD
-# Docker Learning
+# Docker Projects
 =======
-# Docker Learning 
+# Docker Projects 
 >>>>>>> 3ff2883 (update readme)
 
 A collection of Docker projects and exercises completed while containerization, Docker Compose, networking, persistent storage, and container registries.
