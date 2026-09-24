@@ -1,14 +1,12 @@
-version: '3.8'
-
 services:
   web:
-    image: my-flask-app:multistage
+    image: hello-flask:latest
     ports:
       - "5002:5002"
     depends_on:
       - mydb
 
   mydb:
-    image: mysql:5.7
+    image: mysql:8.4
     environment:
       MYSQL_ROOT_PASSWORD: my-secret-pw
